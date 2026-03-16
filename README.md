@@ -4,9 +4,6 @@
 <p align="left">
   <img src="Pics/photo_2026-03-13_11-16-19.png" width=400>
 </p>
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Rizz071/GearTest)](https://github.com/Rizz071/GearTest/commits/main)
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](https://github.com/Rizz071/GearTest)
 
 ---
 
