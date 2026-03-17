@@ -51,9 +51,10 @@
       "shapes"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffffff_fffdffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "git": {
+    "integration_disabled": false,
     "repo_type": "",
     "repo_username": "",
     "ssh_key": ""
