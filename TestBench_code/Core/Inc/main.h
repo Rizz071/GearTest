@@ -61,6 +61,10 @@ void Error_Handler(void);
 #define START_MEASURE_BUTTON_GPIO_Port GPIOA
 #define MOTOR_M1_GATE_Pin GPIO_PIN_12
 #define MOTOR_M1_GATE_GPIO_Port GPIOA
+#define UART1_TX_Pin GPIO_PIN_6
+#define UART1_TX_GPIO_Port GPIOB
+#define UART1_RX_Pin GPIO_PIN_7
+#define UART1_RX_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
