@@ -51,20 +51,20 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(MOTOR_M1_GATE_GPIO_Port, MOTOR_M1_GATE_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(MOTOR_GATE_GPIO_Port, MOTOR_GATE_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : MOTOR_GATE_Pin */
+  GPIO_InitStruct.Pin = MOTOR_GATE_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(MOTOR_GATE_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : START_MEASURE_BUTTON_Pin */
   GPIO_InitStruct.Pin = START_MEASURE_BUTTON_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(START_MEASURE_BUTTON_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : MOTOR_M1_GATE_Pin */
-  GPIO_InitStruct.Pin = MOTOR_M1_GATE_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(MOTOR_M1_GATE_GPIO_Port, &GPIO_InitStruct);
 
 }
 
